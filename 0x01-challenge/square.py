@@ -11,36 +11,10 @@ class Square():
     height: the square height
     """
 
-    def __init__(self, width=0, height=0):
-        """initialization method"""
-        self.width = width
-        self.height = height
-
-    @property
-    def width(self):
-        """Width getter"""
-        return self.__width
-
-    @property
-    def height(self):
-        """Height getter"""
-        return self.__height
-
-    @width.setter
-    def width(self, value):
-        """Width setter"""
-        if value < 1:
-            raise ValueError('Width must be greater than 0')
-        else:
-            self.__width = value
-
-    @height.setter
-    def height(self, value):
-        """Height setter"""
-        if value < 1:
-            raise ValueError('Height must be greater than 0')
-        else:
-            self.__height = value
+    def __init__(self, *args, **kwargs):
+        """instantiation method"""
+        for key, value in kwargs.items():
+            setattr(self, key, value)
 
     def area_of_my_square(self):
         """ Area of the square """
