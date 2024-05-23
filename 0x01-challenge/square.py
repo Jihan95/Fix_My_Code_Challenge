@@ -56,6 +56,9 @@ class Square():
 
 
 if __name__ == "__main__":
+    """
+    Test the class
+    """
 
     s = square(width=12, height=9)
     print(s)
