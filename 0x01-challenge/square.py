@@ -11,7 +11,7 @@ class Square():
     height: the square height
     """
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, width=0, height=0):
         """initialization method"""
         self.width = width
         self.height = height
