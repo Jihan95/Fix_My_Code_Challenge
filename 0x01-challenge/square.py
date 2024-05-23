@@ -24,7 +24,7 @@ class Square():
 
     def __str__(self):
         """string representation"""
-        return "{}/{}".format(self.width, self.height)
+        return "{}/{}".format(self.length, self.length)
 
 
 if __name__ == "__main__":
