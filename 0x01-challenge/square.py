@@ -10,6 +10,8 @@ class Square():
     width: the square width
     height: the square height
     """
+    width = 0
+    height = 0
 
     def __init__(self, *args, **kwargs):
         """instantiation method"""
